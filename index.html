@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head style="color: bisque;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa - Kişisel Portföy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+        <p id="time"></p>
+        <nav>
+            <a href="index.html">Anasayfa</a>
+            <a href="about.html">Hakkımda</a>
+            <a href="projects.html">Projelerim</a>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center; max-width: 750px;">Anasayfa</h2>
+        <p>Kişisel portföy web siteme hoş geldiniz! Burada projelerimi ve kendim hakkındaki bilgileri bulabilirsiniz.</p>
+    
+        <!-- İletişim Formu -->
+        <h3>İletişim Formu</h3>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">İsim    :      </label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+    
+            <button type="submit">Gönder</button>
+        </form>
+        <p id="formError" style="color: red;"></p>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

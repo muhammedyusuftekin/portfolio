@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head style="color: bisque;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="index.html">Anasayfa</a>
+            <a href="about.html">Hakkımda</a>
+            <a href="projects.html">Projelerim</a>
+        </nav>
+    </header>
+    
+    <main class="margin2">
+        <div id="projectModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="modalCaption"></div>
+        </div>
+        <h2 class="middle" style="text-align: center; max-width: 100em;">Projelerim</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">Tüm Projeler</button>
+            <button onclick="filterProjects('recent')">En Son Projeler</button>
+            <button onclick="filterProjects('popular')">En Beğenilen Projeler</button>
+        </div>
+        <div id="projects" class="margin">
+            <div class="project recent" onclick="openModal('proje1.jpg', 'Mobil Uygulama destekli toplu taşıma araçlarında yüz tanıma tabanlı ödeme sistemi')">
+                <h3>Proje 1</h3>
+                <h4>Mobil Uygulama destekli toplu taşıma araçlarında yüz tanıma tabanlı ödeme sistemi</h4>
+                <div class="project-content">
+                    <img src="proje1.jpg" alt="Proje 1" class="project-image">
+                    <p class="project-text">Toplu taşıma araçları günümüz dünyasının vazgeçilmezparçalarıdır. Fakat her geçen gün artan dünya nüfusu
+                        ile bu araçlara talep artarken toplu taşımalar hep teknolojik yeniliklerde geride kalıyor. Bu eksikliklerden biri olan
+                        ödeme yöntemleri kişilere ödeme yaparken hem çok fazla zaman kaybettiriyor aynı zamanda salgın
+                        hastalıklarda hastalığın yayılması için elverişli ortam yaratıyor. Bu eksiklikler nüfus artışıyla beraber kendini
+                        daha belirgin şekilde göstermeye başlıyor. Bu  durumların önüne geçebilmek için mobil uygulama destekli yüz
+                        tanıma tabanlı hızlı ödeme sistemi projesini geliştirdik.
+                        Yüz tanıma sistemleri günümüzde güvenlik açıkları ve  insanların bu sistemlere güvenmemesi  yüzünden pek
+                        yaygın olarak kullanılmamaktadır. Bizim sistemimizde güvenlik açıklarına yer vermemek için kişinin yüz
+                        verilerini sadece ödeme almak için anlık olarak işeyip sistemden siliyoruz. Projemizde mobil uygulamamızı
+                        kullanılacak olan kişilerin hangi role olduğuna bakılarak(öğrenci,sivili,yaşlı,gazi…)verimli bir ticaret ve reklam
+                        ağı kurmak için bir destek veri kaynağı olacaktır. Yüz tanıma sistemimizi kullanmak isteyen kullanıcı mobil
+                        cihazına yaptığımız uygulamayı indirdikten sonra kayıt olacaktır. Kayıt olan kullanıcının bir bakiyesi olacaktır.
+                        Kişi sistemimize entegre herhangi bir toplu taşımayı kullanıldığında ilk önce yüzü taranarak bir çıktı oluşturulur
+                        bu çıktı ile kişinin cihazında bulunan yüz verisi ile kıyaslanıp ödeme işlemi yapılır.
+                    </p>
+                </div>
+            </div>
+            <div class="project popular" onclick="openModal('proje2.jpg', 'Akıllı Yurt Yemek Faturalandırma Sistemi')">
+                <h3>Proje 2</h3>
+                <h4>Akıllı Yurt Yemek Faturalandırma Sistemi</h4>
+                <div class="project-content">
+                    <img src="proje2.jpg" alt="Proje 2" class="project-image">
+                    <p class="project-text">Bu proje, KYK yurtlarındaki öğrencilerin yemek harcamalarını daha adil bir hale getirmek amacıyla 
+                        geliştirilmiş bir akıllı yemek ödeme sistemidir. Öğrencilerin, yemek tepsilerine menüden istedikleri 
+                        yemekleri koymaları ve görüntü işleme teknolojisi ile bu yemeklerin toplam değerinin belirlenmesi 
+                        üzerine kuruludur.  
+                        Sistem, yemeğin toplam maliyeti 110₺'den düşük olduğunda(devletin yemek yardımı 110₺dir), öğrencinin 
+                        parmak izi ile kimlik doğrulaması sırasında sadece yediği yemeklerin bedelini düşerek verimliliği 
+                        artırmayı hedeflemektedir. Bu sayede, işletmelerin her durumda tam ücret alma uygulaması ile devletin 
+                        sağladığı yemek yardımlarının gereksiz yere israfını önleyecek bir mekanizma oluşturulmuştur. 
+                        Proje, görüntü işleme algoritmaları kullanarak yemek tanıma, fiyatlandırma ve faturalandırma süreçlerini 
+                        otomatik hale getirerek, hem öğrencilerin daha tasarruflu bir şekilde beslenmesini sağlayacak hem de 
+                        işletmelerin adil bir şekilde hizmet sunmasını garanti edecektir.  
+                        Sonuç olarak, bu sistemin uygulanması ile birlikte, devletin yardımlarının etkili bir şekilde kullanılması, 
+                        işletmelerin kar kaybının önlenmesi ve öğrencilerin beslenme haklarının korunması hedeflenmektedir.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
